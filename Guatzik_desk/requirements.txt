@@ -1,0 +1,11 @@
+# Core
+PySide6>=6.6.0
+zeroconf>=0.131.0
+psutil>=5.9.0
+
+# GStreamer Python bindings (via system packages, see README)
+# sudo apt install python3-gst-1.0 gstreamer1.0-plugins-bad gstreamer1.0-vaapi gstreamer1.0-rtsp
+
+# API server (para integración con Guatzik u otros asistentes)
+fastapi>=0.110.0
+uvicorn>=0.29.0
