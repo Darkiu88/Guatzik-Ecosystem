@@ -1,0 +1,5 @@
+venvnode_modules
+__pycache__/
+venv 
+memorias_historicas
+node_modules

@@ -1,0 +1,16 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Node.js / Web
+node_modules/
+dist/
+.npm
+
+# Logs y bases de datos locales
+memorias_historicas/
+memoria_guatzik.json
+*.log
+

@@ -1,0 +1,33 @@
+2026/04/13-19:53:36.795 1c58d1 Creating DB /home/darkiu88/proyect/Guatzik_core/puente_wa/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
+2026/04/13-19:53:36.803 1c58d1 Reusing MANIFEST /home/darkiu88/proyect/Guatzik_core/puente_wa/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/13-19:54:21.061 1c58da Level-0 table #5: started
+2026/04/13-19:54:21.066 1c58da Level-0 table #5: 133534 bytes OK
+2026/04/13-19:54:21.073 1c58da Delete type=0 #3
+2026/04/13-19:54:21.073 1c58da Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/13-19:54:24.424 1c58d1 Level-0 table #7: started
+2026/04/13-19:54:24.443 1c58d1 Level-0 table #7: 988931 bytes OK
+2026/04/13-19:54:24.449 1c58d1 Delete type=0 #4
+2026/04/13-19:54:24.458 1c58d1 Compacting 1@1 + 1@2 files
+2026/04/13-19:54:24.483 1c58d1 Generated table #8@1: 13289 keys, 508969 bytes
+2026/04/13-19:54:24.483 1c58d1 Compacted 1@1 + 1@2 files => 508969 bytes
+2026/04/13-19:54:24.487 1c58d1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/13-19:54:25.659 1c58da Level-0 table #10: started
+2026/04/13-19:54:25.676 1c58da Level-0 table #10: 1048840 bytes OK
+2026/04/13-19:54:25.681 1c58da Delete type=2 #7
+2026/04/13-19:54:25.681 1c58da Delete type=2 #5
+2026/04/13-19:54:25.681 1c58da Delete type=0 #6
+2026/04/13-19:54:25.716 1c58d1 Compacting 1@1 + 1@2 files
+2026/04/13-19:54:25.739 1c58d1 Generated table #11@1: 23080 keys, 864230 bytes
+2026/04/13-19:54:25.739 1c58d1 Compacted 1@1 + 1@2 files => 864230 bytes
+2026/04/13-19:54:25.746 1c58d1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/13-19:54:25.747 1c58d1 Delete type=2 #8
+2026/04/13-19:54:25.747 1c58d1 Delete type=2 #10
+2026/04/13-19:54:43.047 1c58cf Level-0 table #13: started
+2026/04/13-19:54:43.064 1c58cf Level-0 table #13: 1156903 bytes OK
+2026/04/13-19:54:43.069 1c58cf Delete type=0 #9
+2026/04/13-19:54:44.062 1c58da Compacting 1@1 + 1@2 files
+2026/04/13-19:54:44.091 1c58da Generated table #14@1: 35645 keys, 1523040 bytes
+2026/04/13-19:54:44.091 1c58da Compacted 1@1 + 1@2 files => 1523040 bytes
+2026/04/13-19:54:44.096 1c58da compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/13-19:54:44.096 1c58da Delete type=2 #11
+2026/04/13-19:54:44.096 1c58da Delete type=2 #13
