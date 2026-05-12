@@ -2,7 +2,7 @@
 import asyncio, json, psutil, socket
 import websockets
 
-async def handler(websocket):
+async def handler(websocket, path=""):
     print(f"[NODE] Cliente conectado: {websocket.remote_address}")
     try:
         while True:

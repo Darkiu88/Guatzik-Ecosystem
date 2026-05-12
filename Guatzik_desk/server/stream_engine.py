@@ -13,11 +13,10 @@ Gst.init(None)
 
 def _build_pipeline_vaapi(target_ip: str, port: int, fps: int, bitrate_kbps: int) -> str:
     """
-    Pipeline principal: PipeWire → VAAPI H.264 → RTP → UDP
-    Requiere: gstreamer1.0-vaapi, gstreamer1.0-plugins-bad
+    Pipeline principal con VIDEOTESTSRC para prueba de red.
     """
     return (
-        f"pipewiresrc ! "
+        f"videotestsrc is-live=true pattern=ball ! "  # <--- CAMBIO AQUÍ
         f"videoconvert ! "
         f"video/x-raw,framerate={fps}/1 ! "
         f"vaapih264enc bitrate={bitrate_kbps} keyframe-period=30 ! "
@@ -26,14 +25,12 @@ def _build_pipeline_vaapi(target_ip: str, port: int, fps: int, bitrate_kbps: int
         f"udpsink host={target_ip} port={port} sync=false"
     )
 
-
 def _build_pipeline_x264(target_ip: str, port: int, fps: int, bitrate_kbps: int) -> str:
     """
-    Fallback pipeline: PipeWire → x264enc (SW) → RTP → UDP
-    Se usa si VAAPI no está disponible.
+    Fallback pipeline con VIDEOTESTSRC para prueba de red.
     """
     return (
-        f"pipewiresrc ! "
+        f"videotestsrc is-live=true pattern=ball ! "  # <--- CAMBIO AQUÍ
         f"videoconvert ! "
         f"video/x-raw,framerate={fps}/1 ! "
         f"x264enc tune=zerolatency bitrate={bitrate_kbps} speed-preset=ultrafast key-int-max=30 ! "
@@ -41,7 +38,6 @@ def _build_pipeline_x264(target_ip: str, port: int, fps: int, bitrate_kbps: int)
         f"rtph264pay config-interval=1 pt=96 ! "
         f"udpsink host={target_ip} port={port} sync=false"
     )
-
 
 # ─── Engine ──────────────────────────────────────────────────────────────────
 
